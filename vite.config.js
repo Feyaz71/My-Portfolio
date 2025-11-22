@@ -1,9 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
+// vite.config.js
 export default defineConfig({
-  // 🚨 ADD THIS LINE to fix asset loading on GitHub Pages
-  base: '/My-Portfolio/', 
+  base: '/', // Change this back to '/' for Netlify!
   plugins: [react()],
-})
+});
